@@ -264,6 +264,23 @@ main{
     line-height: 145%;
 }
 
+.popular-collection button{
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #E02C6D;
+    border: none;
+    background-color: white;
+}
+.seeMoreBtn{
+    margin-top: 4rem;
+    text-align: right;
+}
+.seeMoreBtn span{
+    margin-right: 1rem;
+}
+
+
 @media screen and (max-width:1000px){
     .collection-card-container{
     grid-template-columns: repeat(2,1fr);
@@ -271,9 +288,77 @@ main{
     }
 }
 
-@media screen and (max-width:500){
+@media screen and (max-width:500px){
     .collection-card-container{
     grid-template-columns: repeat(1,1fr);
     gap: 40px;
+    }
+}
+
+.featured-products{
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.featured-products figure{
+    width: 36%;
+}
+.featured-content-container{
+    width: 54%;
+}
+.featured-products h2{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin: 1.6rem 0 1rem 0;
+    color: #0A0826;
+}
+.featured-products p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 3rem;
+    margin-bottom: 1.6rem;
+}
+.featured-content-container button{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    background-color: #E02C6D;
+    padding: 1rem 2.5rem;
+    border: none;
+    margin-top: 1.6rem;
+    width: 16rem;
+}
+
+@media screen and (max-width:576px){
+    .featured-products{
+    margin: 5rem auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .featured-content-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+    .featured-products h2{
+        font-size: 2.4rem;
+        line-height: 36px;
+    }
+    .featured-products figure{
+        width: 100%;
+    }
+    .featured-products figure img{
+        width: 100%;
     }
 }
